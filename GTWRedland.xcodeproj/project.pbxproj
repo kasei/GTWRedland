@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		371EDA58183D6F9F00C82D13 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EDA57183D6F9F00C82D13 /* CoreFoundation.framework */; };
 		371EDA5E183D6F9F00C82D13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 371EDA5C183D6F9F00C82D13 /* InfoPlist.strings */; };
+		371EDA66183D6FC600C82D13 /* GTWSWBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EDA65183D6FC600C82D13 /* GTWSWBase.framework */; };
+		371EDA69183D6FE300C82D13 /* GTWRedlandPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EDA68183D6FE300C82D13 /* GTWRedlandPlugin.m */; };
+		371EDA6C183D70E500C82D13 /* GTWRedlandTripleStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EDA6B183D70E500C82D13 /* GTWRedlandTripleStore.m */; };
+		371EDA6E183D717C00C82D13 /* librdf.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EDA6D183D717C00C82D13 /* librdf.0.dylib */; };
+		371EDA70183D718800C82D13 /* librasqal.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EDA6F183D718800C82D13 /* librasqal.3.dylib */; };
+		371EDA72183D719300C82D13 /* libraptor2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 371EDA71183D719300C82D13 /* libraptor2.0.dylib */; };
+		371EDA75183D76AC00C82D13 /* GTWRedlandParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 371EDA74183D76AC00C82D13 /* GTWRedlandParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +24,16 @@
 		371EDA5B183D6F9F00C82D13 /* GTWRedland-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GTWRedland-Info.plist"; sourceTree = "<group>"; };
 		371EDA5D183D6F9F00C82D13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		371EDA5F183D6F9F00C82D13 /* GTWRedland-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTWRedland-Prefix.pch"; sourceTree = "<group>"; };
+		371EDA65183D6FC600C82D13 /* GTWSWBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTWSWBase.framework; path = ../../../../../Library/Frameworks/GTWSWBase.framework; sourceTree = "<group>"; };
+		371EDA67183D6FE300C82D13 /* GTWRedlandPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTWRedlandPlugin.h; sourceTree = "<group>"; };
+		371EDA68183D6FE300C82D13 /* GTWRedlandPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTWRedlandPlugin.m; sourceTree = "<group>"; };
+		371EDA6A183D70E500C82D13 /* GTWRedlandTripleStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTWRedlandTripleStore.h; sourceTree = "<group>"; };
+		371EDA6B183D70E500C82D13 /* GTWRedlandTripleStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTWRedlandTripleStore.m; sourceTree = "<group>"; };
+		371EDA6D183D717C00C82D13 /* librdf.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librdf.0.dylib; path = ../../../../../../../usr/local/Cellar/redland/1.0.16/lib/librdf.0.dylib; sourceTree = "<group>"; };
+		371EDA6F183D718800C82D13 /* librasqal.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librasqal.3.dylib; path = ../../../../../../../usr/local/Cellar/rasqal/0.9.30/lib/librasqal.3.dylib; sourceTree = "<group>"; };
+		371EDA71183D719300C82D13 /* libraptor2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libraptor2.0.dylib; path = ../../../../../../../usr/local/Cellar/raptor/2.0.9/lib/libraptor2.0.dylib; sourceTree = "<group>"; };
+		371EDA73183D76AC00C82D13 /* GTWRedlandParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTWRedlandParser.h; sourceTree = "<group>"; };
+		371EDA74183D76AC00C82D13 /* GTWRedlandParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTWRedlandParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,7 +41,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371EDA72183D719300C82D13 /* libraptor2.0.dylib in Frameworks */,
+				371EDA70183D718800C82D13 /* librasqal.3.dylib in Frameworks */,
+				371EDA6E183D717C00C82D13 /* librdf.0.dylib in Frameworks */,
 				371EDA58183D6F9F00C82D13 /* CoreFoundation.framework in Frameworks */,
+				371EDA66183D6FC600C82D13 /* GTWSWBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +72,10 @@
 		371EDA56183D6F9F00C82D13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				371EDA71183D719300C82D13 /* libraptor2.0.dylib */,
+				371EDA6F183D718800C82D13 /* librasqal.3.dylib */,
+				371EDA6D183D717C00C82D13 /* librdf.0.dylib */,
+				371EDA65183D6FC600C82D13 /* GTWSWBase.framework */,
 				371EDA57183D6F9F00C82D13 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
@@ -60,6 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				371EDA5A183D6F9F00C82D13 /* Supporting Files */,
+				371EDA67183D6FE300C82D13 /* GTWRedlandPlugin.h */,
+				371EDA68183D6FE300C82D13 /* GTWRedlandPlugin.m */,
+				371EDA6A183D70E500C82D13 /* GTWRedlandTripleStore.h */,
+				371EDA6B183D70E500C82D13 /* GTWRedlandTripleStore.m */,
+				371EDA73183D76AC00C82D13 /* GTWRedlandParser.h */,
+				371EDA74183D76AC00C82D13 /* GTWRedlandParser.m */,
 			);
 			path = GTWRedland;
 			sourceTree = "<group>";
@@ -136,6 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371EDA75183D76AC00C82D13 /* GTWRedlandParser.m in Sources */,
+				371EDA69183D6FE300C82D13 /* GTWRedlandPlugin.m in Sources */,
+				371EDA6C183D70E500C82D13 /* GTWRedlandTripleStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,9 +218,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include/libxml2,
+					/usr/local/include/rasqal,
+					/usr/local/include/raptor2,
+					/usr/local/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -216,8 +259,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include/libxml2,
+					/usr/local/include/rasqal,
+					/usr/local/include/raptor2,
+					/usr/local/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -225,10 +277,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GTWRedland/GTWRedland-Prefix.pch";
 				INFOPLIST_FILE = "GTWRedland/GTWRedland-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/redland/1.0.16/lib,
+					/usr/local/Cellar/rasqal/0.9.30/lib,
+					/usr/local/Cellar/raptor/2.0.9/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -238,10 +301,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GTWRedland/GTWRedland-Prefix.pch";
 				INFOPLIST_FILE = "GTWRedland/GTWRedland-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/redland/1.0.16/lib,
+					/usr/local/Cellar/rasqal/0.9.30/lib,
+					/usr/local/Cellar/raptor/2.0.9/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
