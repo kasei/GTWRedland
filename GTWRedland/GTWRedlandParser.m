@@ -58,7 +58,7 @@ extern raptor_world* raptor_world_ptr;
     return [NSSet setWithObjects:@protocol(GTWRDFParser), nil];
 }
 
-+ (NSSet*) handledMediaTypes {
++ (NSSet*) handledParserMediaTypes {
     return [NSSet setWithObjects:@"text/turtle", @"application/x-turtle", @"application/rdf+xml", nil];
 }
 
