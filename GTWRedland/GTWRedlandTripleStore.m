@@ -67,7 +67,7 @@ extern librdf_world* librdf_world_ptr;
         [queryString appendFormat:@"?subject "];
     }
 
-    if (s) {
+    if (p) {
         [queryString appendFormat:@"%@ ", p];
     } else {
         [queryString appendFormat:@"?predicate "];
